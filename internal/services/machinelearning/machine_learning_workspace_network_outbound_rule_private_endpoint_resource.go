@@ -24,6 +24,7 @@ var resourceTypeSupportSubResType = map[string][]string{
 	"Microsoft.Cache":                   {"redisCache"},
 	"Microsoft.MachineLearningServices": {"amlworkspace"},
 	"Microsoft.Storage":                 {"blob", "table", "queue", "file", "web", "dfs"},
+	"Microsoft.CognitiveServices":       {"account"},
 }
 
 type machineLearningWorkspaceOutboundRulePrivateEndpointModel struct {
@@ -87,6 +88,7 @@ func (r WorkspaceNetworkOutboundRulePrivateEndpoint) Arguments() map[string]*plu
 				"web",
 				"dfs",
 				"redisCache",
+				"account",
 			}, false),
 		},
 
