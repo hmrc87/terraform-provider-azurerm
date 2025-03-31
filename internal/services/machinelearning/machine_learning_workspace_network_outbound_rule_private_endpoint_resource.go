@@ -25,6 +25,7 @@ var resourceTypeSupportSubResType = map[string][]string{
 	"Microsoft.MachineLearningServices": {"amlworkspace"},
 	"Microsoft.Storage":                 {"blob", "table", "queue", "file", "web", "dfs"},
 	"Microsoft.CognitiveServices":       {"account"},
+	"Mirosoft.Search":                   {"searchService"},
 }
 
 type machineLearningWorkspaceOutboundRulePrivateEndpointModel struct {
@@ -89,6 +90,7 @@ func (r WorkspaceNetworkOutboundRulePrivateEndpoint) Arguments() map[string]*plu
 				"dfs",
 				"redisCache",
 				"account",
+				"searchService"
 			}, false),
 		},
 

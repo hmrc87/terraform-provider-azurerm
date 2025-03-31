@@ -92,7 +92,7 @@ The following arguments are supported:
 
 ~> **Note** Supported service resources: **Cognitive Services**, **Key Vault**, **Storage Account**, **Machine Learning Workspace**, **Redis**.
 
-* `sub_resource_target` - (Required) Specifies the Sub Resource of the service resource to connect to. Possible values are `account`, `vault`,`amlworkspace`,`blob`,`table`,`queue`,`file`,`web`,`dfs`, `redisCache`. Changing this forces a new resource to be created.
+* `sub_resource_target` - (Required) Specifies the Sub Resource of the service resource to connect to. Possible values are `account`, `vault`,`amlworkspace`,`blob`,`table`,`queue`,`file`,`web`,`dfs`, `redisCache`, `searchService`. Changing this forces a new resource to be created.
   
   | Service                    | Sub Resource Type                         |
   |----------------------------|-------------------------------------------|
@@ -100,6 +100,7 @@ The following arguments are supported:
   | Machine Learning Workspace | `amlworkspace`                            |
   | Redis                      | `redisCache`                              |
   | Storage Account            | `blob`,`table`,`queue`,`file`,`web`,`dfs` |
+  | Search Service             | `searchService`                           |
   | Key Vault                  | `vault`                                   |
 
 * `spark_enabled` - (Optional) Whether to enable an additional private endpoint to be used by jobs running on Spark. Changing this forces a new resource to be created.
